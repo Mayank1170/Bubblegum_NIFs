@@ -1,0 +1,22 @@
+[package]
+name = "mpl_bubblegum_nif"
+version = "0.1.0"
+authors = ["Mayank <mayankaga1170@gmail.com>"]
+edition = "2021"
+license = "Apache-2.0"
+
+[lib]
+name = "mpl_bubblegum_nif"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.29"
+solana-sdk = "=1.16.0"  # Pin to exact version 1.16.0
+solana-program = "=1.16.0"  # Also pin solana-program to match
+solana-client = "=1.16.0"  # Keep all Solana dependencies at the same version
+mpl-bubblegum = "=1.4.0"  # Specify exact version
+bs58 = "0.5"
+borsh = "0.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
