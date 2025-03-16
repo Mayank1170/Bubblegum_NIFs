@@ -20,9 +20,9 @@ defmodule MplBubblegum.MixProject do
 
   defp package do
     [
-      maintainers: ["Your Name"],
+      maintainers: [" Mayank agarwal"],
       licenses: ["Apache-2.0"],
-      links: %{"GitHub" => "https://github.com/yourusername/mpl-bubblegum-elixir"},
+      links: %{"GitHub" => "https://github.com/Mayank1170/Bubblegum_NIFs"},
       files: ~w(lib native mix.exs README.md LICENSE)
     ]
   end
@@ -31,7 +31,7 @@ defmodule MplBubblegum.MixProject do
     [
       main: "MplBubblegum",
       source_ref: "v#{@version}",
-      source_url: "https://github.com/yourusername/mpl-bubblegum-elixir"
+      source_url: "https://github.com/Mayank1170/Bubblegum_NIFs"
     ]
   end
 
@@ -46,6 +46,6 @@ defmodule MplBubblegum.MixProject do
       {:jason, "~> 1.4"},
       # Try an earlier version
       {:mox, "~> 1.0", only: :test}
-    ]
+        ]
   end
 end
